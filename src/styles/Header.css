@@ -1,0 +1,27 @@
+/*.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+}*/
+
+.header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header h2 {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}

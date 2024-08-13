@@ -1,0 +1,20 @@
+/*.description {
+    text-align: center;
+    color: #fff;
+    margin-top: 180px;
+}*/
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .description h2 {
+    color: #fff;
+  }
+  
+  .description p {
+    margin-bottom: 15px;
+  }
