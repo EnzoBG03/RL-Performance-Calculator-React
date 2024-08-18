@@ -37,7 +37,7 @@ Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le 
 ## Versions
 - v1.0 : Version initiale
 
-## A noter
+## Précision
 RL Performance Tracker existe également en version C#. Voici le lien du projet : https://github.com/EnzoBG03/RL-Performance-Tracker-CSharp
 
 ## Auteur
