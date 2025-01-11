@@ -22,7 +22,6 @@ function Results({ players, onReturn, onClose }) {
             <p>Le meilleur gardien est : {bestGoalkeeper[0]} avec {bestGoalkeeper[1].nbArret} arrêts</p>
             <div className="button-container">
                 <button className="return-button" onClick={onReturn}>Retour à l'accueil</button>
-                <button className="close-button" onClick={onClose}>Fermer l'application</button>
             </div>
         </div>
     );
