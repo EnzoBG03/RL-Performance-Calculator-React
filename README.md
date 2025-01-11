@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# RL Performance Tracker (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+RL Performance Tracker est un site React qui permet de suivre et d'analyser les performances des joueurs dans Rocket League. Il calcule les scores en fonction de diverses actions de jeu et détermine les meilleurs joueurs dans différentes catégories.
 
-## Available Scripts
+## Fonctionnalités
+- Saisie des statistiques de jeu pour plusieurs joueurs
+- Calcul des scores basé sur différentes actions (touches de balle, tirs cadrés, arrêts, sauvetages miraculeux, passes décisives, buts)
+- Détermination des meilleurs joueurs dans les catégories suivantes :
+  - Meilleur joueur global (homme du match)
+  - Meilleur buteur
+  - Meilleur passeur
+  - Meilleur gardien
+- Prise en compte spéciale des sauvetages miraculeux dans le calcul du score des gardiens (Nouvelle fonctionnalité)
+- Saisie des joueurs par paires pour correspondre aux différents modes de jeu (1v1, 2v2, 3v3 ou 4v4) (Nouvelle fonctionnalité)
 
-In the project directory, you can run:
+## Comment utiliser
+1. Ouvrez le site via un navigateur
+2. Suivez les instructions à l'écran pour saisir les noms des joueurs et leurs statistiques
+3. Le site vous demandera si vous souhaitez ajouter d'autres joueurs après chaque paire
+4. Une fois toutes les données saisies, le site affichera les meilleurs joueurs dans chaque catégorie
 
-### `npm start`
+## Système de points
+- Touche de balle : 2 points
+- Tir cadré : 10 points
+- Arrêt : 50 points
+- Sauvetage miraculeux : 75 points (50 points d'arrêt + 25 points de bonus)
+- Passe décisive : 50 points
+- But : 100 points
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prérequis
+- Navigateur Internet récent (Google Chrome ou Mozilla Firefox par exemple)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contribution
+Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le projet et à soumettre vos pull requests.
 
-### `npm test`
+## Versions
+- v1.0 : Version initiale
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Précision
+RL Performance Tracker existe également en version C#. Voici le lien du projet : https://github.com/EnzoBG03/RL-Performance-Tracker-CSharp
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Auteur
+Enzo BENOIST-GIMET

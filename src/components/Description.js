@@ -10,7 +10,7 @@ function Description() {
 
             <p>RL Performance Calculator calculera automatiquement les scores et déterminera le meilleur joueur global (l'homme du match), le meilleur buteur, le meilleur passeur et le meilleur gardien.</p>
 
-            <p>Préparez-vous à entrer dans l'univers des statistiques de Rocket League !</p>
+            <p>Cliquez sur le bouton ci-dessous pour démarrer</p>
         </div>
     );
 }
