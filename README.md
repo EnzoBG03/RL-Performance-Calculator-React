@@ -1,7 +1,7 @@
-# RL Performance Tracker (React)
+# RL Performance Calculator (React)
 
 ## Description
-RL Performance Tracker est un site React qui permet de suivre et d'analyser les performances des joueurs dans Rocket League. Il calcule les scores en fonction de diverses actions de jeu et détermine les meilleurs joueurs dans différentes catégories.
+RL Performance Calculator est un site React qui permet de suivre et d'analyser les performances des joueurs dans Rocket League. Il calcule les scores en fonction de diverses actions de jeu et détermine les meilleurs joueurs dans différentes catégories.
 
 ## Fonctionnalités
 - Saisie des statistiques de jeu pour plusieurs joueurs
@@ -11,8 +11,8 @@ RL Performance Tracker est un site React qui permet de suivre et d'analyser les 
   - Meilleur buteur
   - Meilleur passeur
   - Meilleur gardien
-- Prise en compte spéciale des sauvetages miraculeux dans le calcul du score des gardiens (Nouvelle fonctionnalité)
-- Saisie des joueurs par paires pour correspondre aux différents modes de jeu (1v1, 2v2, 3v3 ou 4v4) (Nouvelle fonctionnalité)
+- Prise en compte spéciale des sauvetages miraculeux dans le calcul du score des gardiens
+- Saisie des joueurs par paires pour correspondre aux différents modes de jeu (1v1, 2v2, 3v3 ou 4v4)
 
 ## Comment utiliser
 1. Ouvrez le site via un navigateur
@@ -35,10 +35,11 @@ RL Performance Tracker est un site React qui permet de suivre et d'analyser les 
 Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le projet et à soumettre vos pull requests.
 
 ## Versions
+- v1.0.1 : Application du changement de nom du projet
 - v1.0 : Version initiale
 
 ## Précision
-RL Performance Tracker existe également en version C#. Voici le lien du projet : https://github.com/EnzoBG03/RL-Performance-Tracker-CSharp
+RL Performance Calculator existe également en version C#. Voici le lien du projet : https://github.com/EnzoBG03/RL-Performance-Calculator-CSharp
 
 ## Auteur
 Enzo BENOIST-GIMET
