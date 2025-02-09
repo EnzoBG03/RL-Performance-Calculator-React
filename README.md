@@ -35,6 +35,7 @@ RL Performance Calculator est un site React qui permet de suivre et d'analyser l
 Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le projet et à soumettre vos pull requests.
 
 ## Versions
+- v1.1 : Correction de bugs et amélioration de la saisie des statistiques
 - v1.0.1 : Application du changement de nom du projet
 - v1.0 : Version initiale
 
