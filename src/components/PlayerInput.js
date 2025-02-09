@@ -4,30 +4,47 @@ import '../styles/PlayerInput.css';
 function PlayerInput({ onSubmit }) {
     const [playerName, setPlayerName] = useState('');
     const [stats, setStats] = useState({
-        nbTouche: 0,
-        nbCadre: 0,
-        nbArret: 0,
-        nbMiracle: 0,
-        nbDecisive: 0,
-        nbBut: 0
+        nbTouche: null,
+        nbCadre: null,
+        nbArret: null,
+        nbMiracle: null,
+        nbDecisive: null,
+        nbBut: null
     });
     const [error, setError] = useState('');
 
+    const statLabels = {
+        nbTouche: 'Ballons touchés',
+        nbCadre: 'Tirs cadrés',
+        nbArret: 'Arrêts',
+        nbMiracle: 'Sauvetages miraculeux',
+        nbDecisive: 'Passes décisives',
+        nbBut: 'Buts'
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (stats.nbMiracle > stats.nbArret) {
+        
+        // Convertir les valeurs vides en 0 pour la soumission
+        const processedStats = Object.keys(stats).reduce((acc, key) => {
+            acc[key] = stats[key] ?? 0;
+            return acc;
+        }, {});
+
+        if (processedStats.nbMiracle > processedStats.nbArret) {
             setError('Le nombre de sauvetages miraculeux ne peut pas être supérieur au nombre d\'arrêts.');
             return;
         }
-        onSubmit(playerName, stats);
+
+        onSubmit(playerName, processedStats);
         setPlayerName('');
         setStats({
-            nbTouche: 0,
-            nbCadre: 0,
-            nbArret: 0,
-            nbMiracle: 0,
-            nbDecisive: 0,
-            nbBut: 0
+            nbTouche: null,
+            nbCadre: null,
+            nbArret: null,
+            nbMiracle: null,
+            nbDecisive: null,
+            nbBut: null
         });
         setError('');
     };
@@ -38,10 +55,14 @@ function PlayerInput({ onSubmit }) {
             setPlayerName(value);
         } else {
             setStats(prevStats => {
-                const newStats = { ...prevStats, [name]: parseInt(value) || 0 };
-                if (name === 'nbArret' && newStats.nbMiracle > newStats.nbArret) {
-                    newStats.nbMiracle = newStats.nbArret;
+                const newValue = value === '' ? null : parseInt(value) || 0;
+                const newStats = { ...prevStats, [name]: newValue };
+                
+                // Vérifier et ajuster nbMiracle si nécessaire
+                if (name === 'nbArret' && newStats.nbMiracle !== null && parseInt(newStats.nbMiracle) > parseInt(value)) {
+                    newStats.nbMiracle = value;
                 }
+                
                 return newStats;
             });
         }
@@ -63,11 +84,11 @@ function PlayerInput({ onSubmit }) {
                     key={stat}
                     type="number"
                     name={stat}
-                    value={stats[stat]}
+                    value={stats[stat] ?? ''}
                     onChange={handleChange}
-                    placeholder={stat}
+                    placeholder={statLabels[stat]}
                     min="0"
-                    max={stat === 'nbMiracle' ? stats.nbArret : undefined}
+                    max={stat === 'nbMiracle' && stats.nbArret !== null ? parseInt(stats.nbArret) : undefined}
                     required
                 />
             ))}
