@@ -14,6 +14,9 @@ RL Performance Calculator est un site React qui permet de suivre et d'analyser l
 - Prise en compte spéciale des sauvetages miraculeux dans le calcul du score des gardiens
 - Saisie des joueurs par paires pour correspondre aux différents modes de jeu (1v1, 2v2, 3v3 ou 4v4)
 
+## Fonctionnalités graphiques
+- Possibilité de passer d'une interface claire à une interface sombre
+
 ## Comment utiliser
 1. Ouvrez le site via un navigateur
 2. Suivez les instructions à l'écran pour saisir les noms des joueurs et leurs statistiques
@@ -35,7 +38,7 @@ RL Performance Calculator est un site React qui permet de suivre et d'analyser l
 Les contributions à ce projet sont les bienvenues. N'hésitez pas à forker le projet et à soumettre vos pull requests.
 
 ## Versions
-- v1.2.0 (Prochainement) : Mise en place d'un mode sombre/clair et mises à jour graphiques
+- v1.2.0 : Mise en place d'un mode sombre/clair et mises à jour graphiques
 - v1.1 : Correction de bugs et amélioration de la saisie des statistiques
 - v1.0.1 : Application du changement de nom du projet
 - v1.0 : Version initiale
