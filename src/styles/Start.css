@@ -7,19 +7,19 @@
 }*/
 
 .start {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #34a853;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: var(--text-light);
+  background-color: var(--button-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-  
+
 .start:hover {
-    background-color: #2d8f49;
+  background-color: var(--button-primary-hover);
 }

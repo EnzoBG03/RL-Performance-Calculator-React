@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/PlayerInput.css';
+import '../styles/theme-variables.css';
 
 function PlayerInput({ onSubmit }) {
     const [playerName, setPlayerName] = useState('');

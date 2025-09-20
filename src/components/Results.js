@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Results.css';
+import '../styles/theme-variables.css';
 
 function Results({ players, onReturn, onClose }) {
     const getBestPlayer = (critereFn) => {

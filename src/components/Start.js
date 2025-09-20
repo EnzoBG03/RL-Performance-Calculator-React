@@ -1,4 +1,5 @@
 import '../styles/Start.css';
+import '../styles/theme-variables.css';
 
 function Start({ onStart }) {
     return (

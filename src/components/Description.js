@@ -1,10 +1,11 @@
 import '../styles/Description.css';
+import '../styles/theme-variables.css';
 
 function Description() {
     return (
         <div className="description">
             <h2>Bienvenue sur RL Performance Calculator !</h2>
-            <p>Cette application vous permet d'analyser les performances des joueurs de Rocket League en détail.</p>
+            <p>Ce site vous permet d'analyser les performances des joueurs de Rocket League en détail.</p>
 
             <p>Vous allez pouvoir saisir les statistiques des joueurs, incluant les touches de balle, les tirs cadrés, les arrêts et sauvetages miraculeux, les passes décisives et les buts marqués.</p>
 

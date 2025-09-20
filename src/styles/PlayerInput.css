@@ -1,4 +1,4 @@
-.player-input-form {
+/*.player-input-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -25,7 +25,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;*/
+    transition: background-color 0.3s;
     display: block;
     width: 200px;
     margin: 20px auto;
@@ -47,4 +47,53 @@
     color: red;
     margin-top: 10px;
     font-weight: bold;
+}*/
+.player-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.player-input-form input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+}
+
+.player-input-form input::placeholder {
+  color: var(--text-secondary);
+}
+
+.player-input-form input[type="number"] {
+  width: 200px;
+}
+
+.player-input-form button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: var(--text-light);
+  background-color: var(--button-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.player-input-form button:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.error-message {
+  color: var(--error-color);
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
 }

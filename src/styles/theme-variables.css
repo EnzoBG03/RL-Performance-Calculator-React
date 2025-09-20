@@ -1,0 +1,92 @@
+/*.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-header-footer: #282c34;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-light: #ffffff;
+  --border-color: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --button-primary: #34a853;
+  --button-primary-hover: #2d8f49;
+  --button-secondary: #234399;
+  --button-secondary-hover: #1565c0;
+  --error-color: #dc3545;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --results-bg-alt: #f0f0f0;
+  --results-bg-alt2: #e8e8e8;
+}
+
+.dark-theme {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-header-footer: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-light: #ffffff;
+  --border-color: #404040;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --button-primary: #34a853;
+  --button-primary-hover: #2d8f49;
+  --button-secondary: #5a7bc8;
+  --button-secondary-hover: #4a6ba8;
+  --error-color: #ff6b6b;
+  --card-bg: #2a2a2a;
+  --input-bg: #333333;
+  --results-bg-alt: #333333;
+  --results-bg-alt2: #404040;
+}*/
+/* Variables CSS globales pour les thèmes */
+
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-header-footer: #282c34;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-light: #ffffff;
+  --border-color: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --button-primary: #34a853;
+  --button-primary-hover: #2d8f49;
+  --button-secondary: #234399;
+  --button-secondary-hover: #1565c0;
+  --error-color: #dc3545;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --results-bg-alt: #f0f0f0;
+  --results-bg-alt2: #e8e8e8;
+}
+
+.dark-theme {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-header-footer: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-light: #ffffff;
+  --border-color: #404040;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --button-primary: #34a853;
+  --button-primary-hover: #2d8f49;
+  --button-secondary: #5a7bc8;
+  --button-secondary-hover: #4a6ba8;
+  --error-color: #ff6b6b;
+  --card-bg: #2a2a2a;
+  --input-bg: #333333;
+  --results-bg-alt: #333333;
+  --results-bg-alt2: #404040;
+}
