@@ -1,92 +1,102 @@
-/*.app {
-  min-height: 100vh;
-  transition: all 0.3s ease;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --font-display: 'Teko', sans-serif;
+  --font-sub: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 }
 
-.light-theme {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f5f5;
-  --bg-header-footer: #282c34;
-  --text-primary: #000000;
-  --text-secondary: #333333;
-  --text-light: #ffffff;
-  --border-color: #ccc;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --button-primary: #34a853;
-  --button-primary-hover: #2d8f49;
-  --button-secondary: #234399;
-  --button-secondary-hover: #1565c0;
-  --error-color: #dc3545;
-  --card-bg: #ffffff;
-  --input-bg: #ffffff;
-  --results-bg-alt: #f0f0f0;
-  --results-bg-alt2: #e8e8e8;
-}
-
+/* Thème Sombre (Esprit Stade Rocket League / Night Match) */
 .dark-theme {
-  --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
-  --bg-header-footer: #1a1a1a;
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
+  --bg-primary: #0a0d14;
+  --bg-secondary: #101522;
+  --bg-card: rgba(18, 24, 38, 0.75);
+  --bg-card-hover: rgba(26, 35, 55, 0.85);
+  --bg-header-footer: #080a0f;
+  
+  --text-primary: #f0f4fc;
+  --text-secondary: #8ea1c1;
+  --text-muted: #53627c;
   --text-light: #ffffff;
-  --border-color: #404040;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --button-primary: #34a853;
-  --button-primary-hover: #2d8f49;
-  --button-secondary: #5a7bc8;
-  --button-secondary-hover: #4a6ba8;
-  --error-color: #ff6b6b;
-  --card-bg: #2a2a2a;
-  --input-bg: #333333;
-  --results-bg-alt: #333333;
-  --results-bg-alt2: #404040;
-}*/
-/* Variables CSS globales pour les thèmes */
+  
+  /* Accents Rocket League */
+  --rl-blue: #00d2ff;
+  --rl-blue-glow: rgba(0, 210, 255, 0.35);
+  --rl-orange: #ff7700;
+  --rl-orange-glow: rgba(255, 119, 0, 0.35);
+  --accent-gold: #ffd000;
+  --accent-gold-glow: rgba(255, 208, 0, 0.4);
+
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-focus: var(--rl-blue);
+  --input-bg: #121826;
+  --results-bg-alt: #161e30;
+  --results-bg-alt2: #1c263c;
+  
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  --glow-btn: 0 0 20px var(--rl-blue-glow);
+}
+
+/* Thème Clair (Esprit Tournoi Diurne) */
+.light-theme {
+  --bg-primary: #f0f3fa;
+  --bg-secondary: #e2e8f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fcfdfe;
+  --bg-header-footer: #0e1626;
+  
+  --text-primary: #0b1323;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-light: #ffffff;
+  
+  --rl-blue: #0284c7;
+  --rl-blue-glow: rgba(2, 132, 199, 0.25);
+  --rl-orange: #ea580c;
+  --rl-orange-glow: rgba(234, 88, 12, 0.25);
+  --accent-gold: #d97706;
+  --accent-gold-glow: rgba(217, 119, 6, 0.3);
+
+  --border-color: #cbd5e1;
+  --border-focus: var(--rl-blue);
+  --input-bg: #f8fafc;
+  --results-bg-alt: #f1f5f9;
+  --results-bg-alt2: #e2e8f0;
+  
+  --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+  --glow-btn: 0 4px 14px var(--rl-blue-glow);
+}
 
 .app {
   min-height: 100vh;
-  transition: all 0.3s ease;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(0, 210, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(255, 119, 0, 0.06) 0%, transparent 50%);
 }
 
-.light-theme {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f5f5;
-  --bg-header-footer: #282c34;
-  --text-primary: #000000;
-  --text-secondary: #333333;
-  --text-light: #ffffff;
-  --border-color: #ccc;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --button-primary: #34a853;
-  --button-primary-hover: #2d8f49;
-  --button-secondary: #234399;
-  --button-secondary-hover: #1565c0;
-  --error-color: #dc3545;
-  --card-bg: #ffffff;
-  --input-bg: #ffffff;
-  --results-bg-alt: #f0f0f0;
-  --results-bg-alt2: #e8e8e8;
+/* Transition fluide pour le changement de thème */
+.app,
+.app *,
+.app *::before,
+.app *::after {
+  transition: background-color 0.3s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease !important;
 }
 
-.dark-theme {
-  --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
-  --bg-header-footer: #1a1a1a;
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
-  --text-light: #ffffff;
-  --border-color: #404040;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --button-primary: #34a853;
-  --button-primary-hover: #2d8f49;
-  --button-secondary: #5a7bc8;
-  --button-secondary-hover: #4a6ba8;
-  --error-color: #ff6b6b;
-  --card-bg: #2a2a2a;
-  --input-bg: #333333;
-  --results-bg-alt: #333333;
-  --results-bg-alt2: #404040;
+/* On désactive les transitions sur les animations pures pour éviter les lags */
+.theme-toggle,
+.start,
+.btn-finish,
+.return-button {
+  transition: transform 0.2s ease, 
+              box-shadow 0.2s ease, 
+              background 0.2s ease, 
+              background-color 0.3s ease, 
+              color 0.3s ease !important;
 }

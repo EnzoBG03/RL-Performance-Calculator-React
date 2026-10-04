@@ -1,4 +1,3 @@
-// ThemeContext.js
 import React, { useState, useContext, createContext } from 'react';
 
 // Contexte pour le thème
@@ -21,7 +20,6 @@ export function ThemeProvider({ children }) {
   );
 }
 
-// Hook personnalisé pour utiliser le thème
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
